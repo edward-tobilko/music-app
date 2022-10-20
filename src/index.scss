@@ -1,0 +1,26 @@
+@tailwind base;
+// @tailwind components;
+@tailwind utilities;
+
+@import "./vars.scss";
+@import "./reset.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $fontMain !important;
+  font-size: $smallFontSize !important;
+  background-image: linear-gradient(to left, #870000, #190a05);
+  color: $whiteColor !important;
+  line-height: 1;
+
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  padding: 0 $containerPadding;
+}

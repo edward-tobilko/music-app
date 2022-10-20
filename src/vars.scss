@@ -1,0 +1,60 @@
+// Container & Breakpoints
+@use "sass:math";
+$containerWidth: 1200px;
+$containerPadding: 20px;
+
+$breakpoint1440: 1440px;
+$breakpoint1280: 1280px;
+$breakpoint992: 992px;
+$breakpoint768: 768px;
+$breakpoint576: 576px;
+$breakpoint320: 320px;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: "black";
+$burgerActiveColor: "white";
+
+// Fonts
+$fontMain: "Manuale", sans-serif;
+$fontSecondary: "Redressed", cursive;
+
+// Colors
+$contentColor: #020a05;
+$activeTextColor: #9880e6;
+$textColor: #999999;
+$whiteColor: #f2f2f2;
+
+// Fonts Size
+$bigFontSize: 32px;
+$semiFontSize: 25px;
+$normalFontSize: 19px;
+$smallFontSize: 15px;
+
+// Fonts weight
+$font: 300;
+$fontMedium: 500;
+$fontSemiBold: 600;
+$fontBold: 700;
+
+// Media
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 320px) {
+}

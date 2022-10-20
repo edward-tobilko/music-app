@@ -1,0 +1,118 @@
+@import "../../vars.scss";
+
+.artist__albums-title {
+  font-size: $semiFontSize;
+  color: $whiteColor;
+  letter-spacing: 2px;
+  font-weight: $fontSemiBold;
+  text-transform: uppercase;
+  margin: 20px 0 !important;
+}
+
+.artist__albums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $activeTextColor;
+    border-radius: 10px;
+    &-img {
+      filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.551));
+      width: 100%;
+    }
+  }
+  &-item__desc {
+    padding: 30px 5px;
+    max-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    &-name {
+      text-transform: uppercase;
+      font-size: $normalFontSize;
+      color: $whiteColor;
+      font-weight: $fontSemiBold;
+      letter-spacing: 1px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-genre {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0 !important;
+      padding: 0 20px;
+      font-size: $normalFontSize;
+    }
+    &-copyright {
+      font-size: $smallFontSize;
+      color: $textColor;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .artist__albums-item {
+    max-width: 300px;
+  }
+  .song__details-header__desc {
+    text-align: center;
+  }
+  .artist__albums-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song__details-header-img {
+    max-width: 400px;
+  }
+  .artist__albums {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .song__details-header__desc-name:first-child {
+    font-size: 20px;
+  }
+  .artist__albums-title {
+    font-size: 20px;
+  }
+  .artist__albums-item__desc {
+    padding: 15px 5px;
+  }
+  .artist__albums-item__desc-name {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+  .artist__albums-item__desc-genre {
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 5px 0 !important;
+  }
+  .artist__albums-item__desc-copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .artist__albums-item {
+    max-width: 210px;
+  }
+  .artist__albums-item__desc-name {
+    font-size: 12px;
+  }
+  .artist__albums-item__desc-genre {
+    font-size: 13px;
+  }
+}

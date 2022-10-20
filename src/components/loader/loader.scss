@@ -1,0 +1,26 @@
+/* Loader */
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+.ant-spin-lg .ant-spin-dot {
+  font-size: 54px !important;
+  transform: rotate(0deg) scale(0.2);
+}
+.ant-spin-lg .ant-spin-dot i {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: white;
+}

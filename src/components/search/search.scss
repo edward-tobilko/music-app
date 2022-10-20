@@ -1,0 +1,43 @@
+@import "../../vars.scss";
+
+.search {
+  margin: 0 auto;
+  width: 300px;
+  &-term {
+    position: relative;
+    &-input {
+      width: 300px;
+      background: inherit;
+      border-bottom: 1px solid $whiteColor;
+      padding: 5px 10px 5px 35px;
+      color: $whiteColor;
+      &:focus {
+        border-bottom: 1px solid $activeTextColor;
+      }
+    }
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search {
+    width: 200px;
+  }
+  .search-term-input {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search {
+    width: 150px;
+  }
+  .search-term-input {
+    width: 150px;
+  }
+}

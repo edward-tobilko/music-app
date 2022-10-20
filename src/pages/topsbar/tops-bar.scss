@@ -1,0 +1,50 @@
+@import "../../vars.scss";
+
+.tops__bar {
+  margin-top: 20px;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-name {
+    font-size: $semiFontSize;
+    color: $whiteColor;
+    font-weight: $fontSemiBold;
+  }
+  &-link {
+    color: $whiteColor !important;
+    opacity: 0.8;
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &-artists {
+    padding-bottom: 50px !important;
+    &-item {
+      width: 30% !important;
+      height: auto !important;
+    }
+    &-img {
+      border-radius: 30%;
+    }
+  }
+}
+
+.title__artist {
+  margin: 30px 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .tops__bar {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tops__bar-name {
+    font-size: 20px;
+  }
+}

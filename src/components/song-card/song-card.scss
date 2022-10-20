@@ -1,0 +1,48 @@
+@import "../../vars.scss";
+
+.song__card {
+  &-item {
+    position: relative;
+    background: rgba(41, 7, 7, 0.5);
+    box-shadow: 0 0 6px 0;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+  }
+  &-img {
+    width: 100%;
+  }
+  &-desc {
+    padding: 0 15px;
+    margin-top: 20px;
+    &-title {
+      font-size: $normalFontSize;
+      text-transform: uppercase;
+      color: $whiteColor;
+    }
+    &-subtitle {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: $textColor;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .song__card-desc-title {
+    font-size: 15px;
+  }
+  .song__card-desc-subtitle {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .song__card-desc-title {
+    font-size: 12px;
+  }
+  .song__card-desc-subtitle {
+    font-size: 9px;
+  }
+}

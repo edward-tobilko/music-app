@@ -1,0 +1,45 @@
+.chartCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+  &-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 8px;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .chartCard-desc {
+    max-width: 200px;
+    width: 100%;
+  }
+  .chartCard-des-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .chartCard {
+    margin: 15px 0;
+  }
+  .top__charts-title {
+    font-size: 24px;
+  }
+  .chartCard-img {
+    width: 55px;
+    height: 55px;
+  }
+  .chartCard-desc {
+    max-width: 130px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../vars.scss";
+
+.top__charts {
+  margin-top: 50px;
+  &-title {
+    font-size: $bigFontSize;
+    color: $whiteColor;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-content {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .top__charts-content {
+    padding: 0;
+  }
+  .top__charts {
+    margin-top: 0;
+  }
+  .top__charts-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top__charts-title {
+    font-size: 22px;
+  }
+}

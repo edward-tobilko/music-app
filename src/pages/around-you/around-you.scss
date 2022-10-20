@@ -1,0 +1,12 @@
+@import "../../vars.scss";
+
+.around__you {
+  margin-top: 50px;
+  &-title {
+    font-size: $bigFontSize;
+    color: $whiteColor;
+    text-align: center;
+    margin-bottom: 20px !important;
+    text-transform: uppercase;
+  }
+}

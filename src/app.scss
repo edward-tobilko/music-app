@@ -1,0 +1,89 @@
+@import "./vars.scss";
+
+.app {
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 1fr;
+  gap: 10px;
+  padding-bottom: 150px;
+}
+
+// Scroll Up
+.scroll__up {
+  position: fixed;
+  bottom: -30%;
+  right: 35px;
+  z-index: 1000;
+
+  background-color: hsla(0, 0%, 100%, 0.584);
+  display: inline-flex;
+  text-decoration: none;
+  padding: 12px 10px;
+  border-radius: 7px;
+  font-size: $semiFontSize;
+  color: $contentColor;
+  &:hover {
+    color: initial;
+  }
+  svg {
+    animation: slideInfinite 1.5s linear infinite;
+  }
+}
+
+.show-scroll__up {
+  bottom: 130px;
+  animation: slowUp 0.6s linear;
+}
+
+// Animations
+@keyframes slowUp {
+  from {
+    bottom: 0%;
+  }
+
+  to {
+    bottom: 130px;
+  }
+}
+
+@keyframes slideInfinite {
+  from {
+    transform: translateY(5px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+// Media
+@media screen and (max-width: 1200px) {
+  .app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .show-scroll__up {
+    bottom: 100px;
+  }
+  .scroll__up {
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .show-scroll__up {
+    bottom: 70px;
+  }
+  .scroll__up {
+    right: 10px;
+    font-size: 15px;
+  }
+}
