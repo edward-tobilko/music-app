@@ -1,5 +1,5 @@
-import React from "react";
 import { useParams } from "react-router-dom";
+
 import ArtistAlbums from "../../components/artist-albums/ArtistAlbums";
 import Error from "../../components/error/Error";
 import HeaderDetails from "../../components/header-details/HeaderDetails";
@@ -8,6 +8,7 @@ import { useGetArtistDetailsQuery } from "../../redux/api/shazamCore";
 
 const ArtistDetails = () => {
   const { id: artistId } = useParams();
+
   const {
     data: artistDetailsData,
     isFetching: isFetchingArtistDetails,
@@ -24,7 +25,7 @@ const ArtistDetails = () => {
         artistId={artistId}
       />
       <ArtistAlbums
-        data={Object.values(artistDetailsData?.albums)}
+        data={Object.values(artistDetailsData?.data[0]?.views?.playlists?.data)}
         artistId={artistId}
       />
     </div>

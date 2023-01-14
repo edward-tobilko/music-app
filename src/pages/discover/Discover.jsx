@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import SongCard from "../../components/song-card/SongCard";
 import { useGetGenreBySelectQuery } from "../../redux/api/shazamCore";
+
+import { useSelector } from "react-redux";
 import "./discover.scss";
 
 const Discover = () => {

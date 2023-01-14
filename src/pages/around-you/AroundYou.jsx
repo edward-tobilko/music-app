@@ -1,11 +1,13 @@
+import { useEffect, useState } from "react";
+
 import axios from "axios";
-import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import "./around-you.scss";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import SongCard from "../../components/song-card/SongCard";
 import { useGetSongsByCountryQuery } from "../../redux/api/shazamCore";
-import "./around-you.scss";
 
 // Get my geolocation api
 const geoDataApi =

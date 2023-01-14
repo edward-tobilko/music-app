@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { setGenreItem } from "../../redux/slices/playerSlice";
 import { genres } from "../../utils/utils";

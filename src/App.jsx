@@ -1,19 +1,21 @@
-import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { useSelector } from "react-redux";
+import "./app.scss";
+
 import Discover from "./pages/discover/Discover";
 import Sidebar from "./pages/sidebar/Sidebar";
 import TopsBar from "./pages/topsbar/TopsBar";
-import "./app.scss";
-import { Route, Routes } from "react-router-dom";
 import AroundYou from "./pages/around-you/AroundYou";
 import TopArtists from "./pages/top-artists/TopArtists";
 import TopCharts from "./pages/top-charts/TopCharts";
 import SongDetails from "./pages/song-details/SongDetails";
 import ArtistDetails from "./pages/artist-details/ArtistDetails";
-import Search from "./components/search/Search";
 import SearchPage from "./pages/search/SearchPage";
+
+import Search from "./components/search/Search";
 import Select from "./components/select/Select";
-import { useSelector } from "react-redux";
 import Player from "./components/player/Player";
+
 import { IoIosArrowUp } from "react-icons/io";
 
 const App = () => {

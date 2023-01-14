@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import { useGetTopChartsQuery } from "../../redux/api/shazamCore";

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   BiVolumeMute,
   BiVolumeLow,
@@ -8,12 +8,13 @@ import {
 import { FiRepeat } from "react-icons/fi";
 import { BsPause, BsPlay } from "react-icons/bs";
 import { TbPlayerTrackPrev, TbPlayerTrackNext } from "react-icons/tb";
-import { useDispatch, useSelector } from "react-redux";
+
 import "./player.scss";
 import {
   setPlayPause,
   setPrevNextStepSong,
 } from "../../redux/slices/playerSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Player = () => {
   // States

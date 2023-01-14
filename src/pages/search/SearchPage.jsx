@@ -1,10 +1,10 @@
-import React from "react";
-import { useParams } from "react-router-dom";
 import { useGetSongsBySearchQuery } from "../../redux/api/shazamCore";
-import { useSelector } from "react-redux";
 import Loader from "../../components/loader/Loader";
 import Error from "../../components/error/Error";
 import SongCard from "../../components/song-card/SongCard";
+
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const SearchPage = () => {
   const { search } = useParams();

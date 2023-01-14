@@ -1,4 +1,3 @@
-import React from "react";
 import { CgPlayPauseR, CgPlayButtonR } from "react-icons/cg";
 
 const PlayPause = ({

@@ -1,5 +1,5 @@
-import React from "react";
 import { useSelector } from "react-redux";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import TopChartCard from "../../components/top-chart-card/TopChartCard";

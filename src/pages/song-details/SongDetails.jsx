@@ -1,6 +1,6 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+
 import Error from "../../components/error/Error";
 import HeaderDetails from "../../components/header-details/HeaderDetails";
 import Loader from "../../components/loader/Loader";
@@ -21,6 +21,7 @@ const SongDetails = () => {
     isFetching: isFetchingSongDetails,
     error: errorSongDetails,
   } = useGetSongDetailsQuery(songId);
+
   const {
     data: relatedDataSong,
     isFetching: isFetchingRelatedSong,

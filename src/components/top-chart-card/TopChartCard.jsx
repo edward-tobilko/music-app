@@ -1,6 +1,6 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+
 import { setActiveSong, setPlayPause } from "../../redux/slices/playerSlice";
 import PlayPause from "../play-pause/PlayPause";
 import "./top-chart-card.scss";

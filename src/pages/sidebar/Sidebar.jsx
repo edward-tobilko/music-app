@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import logo from "../../img/music-logo.png";
 import { links } from "../../utils/utils";
 import "./sidebar.scss";
+
 import { VscMenu } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
 

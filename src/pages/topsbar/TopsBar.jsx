@@ -1,6 +1,6 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 import TopChartCard from "../../components/top-chart-card/TopChartCard";
 import { useGetTopChartsQuery } from "../../redux/api/shazamCore";
 import { setActiveSong, setPlayPause } from "../../redux/slices/playerSlice";
