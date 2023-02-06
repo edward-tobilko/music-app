@@ -72,20 +72,17 @@ const TopsBar = () => {
         freeMode
         spaceBetween={15}
       >
-        {data
-          ?.slice(0, 7)
-          ?.map((artist) => (
-            <SwiperSlide key={artist.key} className="tops__bar-artists-item">
-              <Link to={`/artists/${artist?.artists[0]?.adamid}`}>
-                <img
-                  src={artist?.images?.background}
-                  alt={artist?.artists[0]?.alias}
-                  className="tops__bar-artists-img"
-                />
-              </Link>
-            </SwiperSlide>
-          ))
-          .reverse()}
+        {data?.slice(0, 7)?.map((artist) => (
+          <SwiperSlide key={artist.key} className="tops__bar-artists-item">
+            <Link to={`/artists/${artist?.artists?.adamid}`}>
+              <img
+                src={artist?.images?.background}
+                alt={artist?.artists?.alias}
+                className="tops__bar-artists-img"
+              />
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
