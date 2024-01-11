@@ -1,7 +1,9 @@
 import { useDispatch } from "react-redux";
+
+import "./select.scss";
+
 import { setGenreItem } from "../../redux/slices/playerSlice";
 import { genres } from "../../utils/utils";
-import "./select.scss";
 
 const Select = ({ genreItem }) => {
   const dispatch = useDispatch();

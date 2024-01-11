@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 import "./app.scss";
 
 import Discover from "./pages/discover/Discover";

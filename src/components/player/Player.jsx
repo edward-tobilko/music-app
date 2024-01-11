@@ -1,4 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import "./player.scss";
+
 import {
   BiVolumeMute,
   BiVolumeLow,
@@ -9,15 +13,12 @@ import { FiRepeat } from "react-icons/fi";
 import { BsPause, BsPlay } from "react-icons/bs";
 import { TbPlayerTrackPrev, TbPlayerTrackNext } from "react-icons/tb";
 
-import "./player.scss";
 import {
   setPlayPause,
   setPrevNextStepSong,
 } from "../../redux/slices/playerSlice";
-import { useDispatch, useSelector } from "react-redux";
 
 const Player = () => {
-  // States
   const [volume, setVolume] = useState(0.2);
   const [repeat, setRepeat] = useState(false);
   const [shuffle, setShuffle] = useState(false);
@@ -42,7 +43,6 @@ const Player = () => {
     }
   }
 
-  // Functions
   const handlePlayPause = () => {
     if (!isActive) return;
 
@@ -75,7 +75,6 @@ const Player = () => {
     }
   };
 
-  // Hook useEffect
   useEffect(() => {
     ref.current.currentTime = seekTime;
   }, [seekTime]);

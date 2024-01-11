@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
+import "./top-artists.scss";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
+
 import { useGetTopChartsQuery } from "../../redux/api/shazamCore";
-import "./top-artists.scss";
 
 const TopArtists = () => {
   const { data, isFetching, error } = useGetTopChartsQuery();

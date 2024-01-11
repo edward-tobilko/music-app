@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { FcMusic } from "react-icons/fc";
 
 const HeaderDetails = ({ songData, artistId, artistDetailsData }) => {

@@ -4,6 +4,7 @@ import ArtistAlbums from "../../components/artist-albums/ArtistAlbums";
 import Error from "../../components/error/Error";
 import HeaderDetails from "../../components/header-details/HeaderDetails";
 import Loader from "../../components/loader/Loader";
+
 import { useGetArtistDetailsQuery } from "../../redux/api/shazamCore";
 
 const ArtistDetails = () => {

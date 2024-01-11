@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
+import "./tops-bar.scss";
+
 import TopChartCard from "../../components/top-chart-card/TopChartCard";
+
 import { useGetTopChartsQuery } from "../../redux/api/shazamCore";
 import { setActiveSong, setPlayPause } from "../../redux/slices/playerSlice";
-import "./tops-bar.scss";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";

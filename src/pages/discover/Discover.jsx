@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
+
+import "./discover.scss";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import SongCard from "../../components/song-card/SongCard";
-import { useGetGenreBySelectQuery } from "../../redux/api/shazamCore";
 
-import { useSelector } from "react-redux";
-import "./discover.scss";
+import { useGetGenreBySelectQuery } from "../../redux/api/shazamCore";
 
 const Discover = () => {
   const { genreItem, activeSong, isPlaying } = useSelector(

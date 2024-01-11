@@ -1,9 +1,10 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+import "./top-chart-card.scss";
+
 import { setActiveSong, setPlayPause } from "../../redux/slices/playerSlice";
 import PlayPause from "../play-pause/PlayPause";
-import "./top-chart-card.scss";
 
 const TopChartCard = ({ song, index, isPlaying, activeSong, data }) => {
   const dispatch = useDispatch();

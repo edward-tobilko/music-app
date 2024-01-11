@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
 
+import "./top-charts.scss";
+
 import Error from "../../components/error/Error";
 import Loader from "../../components/loader/Loader";
 import TopChartCard from "../../components/top-chart-card/TopChartCard";
+
 import { useGetTopChartsQuery } from "../../redux/api/shazamCore";
-import "./top-charts.scss";
 
 const TopCharts = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);

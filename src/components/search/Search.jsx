@@ -1,7 +1,9 @@
 import { useState } from "react";
-import "./search.scss";
-import { BsSearch } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+
+import "./search.scss";
+
+import { BsSearch } from "react-icons/bs";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
