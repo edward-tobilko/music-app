@@ -5,4 +5,15 @@
 - RapidApi: https://rapidapi.com/tipsters/api/shazam-core/
 - IP Geolocation API: https://geo.ipify.org
 
-#### `npm start`
+#### git clone `https://edward-tobilko.github.io/music-app/`
+#### `npm install`
+#### `npm run start`
+
+### Tech stack:
+- React
+- Redux-toolkit / RTKQuery
+- RestAPI / Axios
+- SASS / PostCSS / TailwindCSS
+- Git / GitHub
+
+If you 👍 this project don't forget to turn on a ⭐ for it.
